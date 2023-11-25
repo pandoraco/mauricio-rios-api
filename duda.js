@@ -27,7 +27,7 @@ async function DudaSite(
   option
 ) {
   const account_name = getAccountName();
-  const { site_name } = await duda.sites.create({ template_id, data });
+  const { site_name } = await duda.sites.create({ template_id, ...data });
   if (!site_name) throw new Error("Error obtaining site name");
   await duda.accounts.create({ account_name, account_type });
   await duda.accounts.permissions.grantSiteAccess({
