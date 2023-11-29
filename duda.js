@@ -11,14 +11,7 @@ const getAccountName = () => {return `tmp_${(Math.random() + 1)
 const permissions = [
   "INSITE",
   "RESET",
-  "SEO",
-  "STATS_TAB",
-  "REPUBLISH",
   "EDIT",
-  "BLOG",
-  "PUSH_NOTIFICATIONS",
-  "PUBLISH",
-  "CUSTOM_DOMAIN",
 ];
 
 async function DudaSite(
